@@ -5,16 +5,6 @@
   justify-content: center;
   gap: 48px;
 
-  @mixin media($width, $column) {
-    @media (min-width: $width) {
-      & {
-        max-width: $width;
-        // margin: 50px auto;
-        grid-template-columns: repeat($column, 200px);
-      }
-    }
-  }
-
   @include media(488px, 2);
   @include media(768px, 3);
   @include media(1024px, 4);

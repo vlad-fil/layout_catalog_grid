@@ -1,0 +1,8 @@
+@mixin media($width, $column) {
+  @media (min-width: $width) {
+    & {
+      max-width: $width;
+      grid-template-columns: repeat($column, 200px);
+    }
+  }
+}
